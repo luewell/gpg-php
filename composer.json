@@ -1,5 +1,5 @@
 {
-  "version": "1.0.3",
+  "version": "1.0.4",
   "name": "luewell/gpg",
   "description": "This package contains the implementation of a simple GPG wrapper",
   "license": "MIT",
