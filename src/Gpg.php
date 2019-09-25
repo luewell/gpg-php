@@ -1474,6 +1474,11 @@ class Gpg
         $cmd[] = '3';
 
         if (! is_null($inOptPassword)) {
+            if (version_compare(self::version(), '2.1.0') >= 0) {
+                $cmd[] = '--pinentry-mode';
+                $cmd[] = 'loopback';
+            }
+            
             $cmd[] = '--passphrase-fd';
             $cmd[] = '0';
         }
