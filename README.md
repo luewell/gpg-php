@@ -48,12 +48,12 @@ See the file [LICENSE.TXT](LICENSE.TXT)
 
 From the command line:
 
-    composer require dbeurive/gpg
+    composer require luewell/gpg
 
 Or, from within the file `composer.json`:
 
     "require": {
-        "dbeurive/gpg": "*"
+        "luewell/gpg": "*"
     }
 
 # <a name="a3"></a>Synopsis
