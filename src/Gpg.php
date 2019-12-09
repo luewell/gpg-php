@@ -1468,6 +1468,11 @@ class Gpg
         $cmd[] = '--batch';
         $cmd[] = '--yes';
         $cmd[] = '--always-trust';
+        
+        if (getenv('GPG_CONFIG')) {
+          $cmd = array_merge($cmd, explode(',', getenv('GPG_CONFIG')));
+        }
+        
         $cmd[] = '--output';
         $cmd[] = escapeshellarg($tempCommandOutputPath);
         $cmd[] = '--status-fd';
